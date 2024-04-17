@@ -15,7 +15,7 @@ function HomeHero() {
                 <IconTailButton text='Afla mai multe' path='/' icon={ArrowDownwardIcon} color='primary' />
             </div>
             <div className="flex justify-center items-center w-full">
-                <img src={HeroImage} alt="Hero image" />
+                <img src={HeroImage} alt="Hero image" className='transition-all hover:scale-105 ease-in-out duration-700' />
             </div>
         </div>
     )

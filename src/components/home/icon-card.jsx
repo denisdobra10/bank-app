@@ -9,7 +9,7 @@ function IconCard({ text = "Title", icon = BusinessCenterIcon, iconStyle, textSt
 
     return (
         <div className='flex flex-col gap-2 justify-center items-center'>
-            <SvgIcon component={icon} className={`${iconStyle}`} style={{ fontSize: isMobile ? '3rem' : '5rem' }} />
+            <SvgIcon component={icon} className={`transition-all hover:scale-105 ease-in-out duration-700 ${iconStyle}`} style={{ fontSize: isMobile ? '3rem' : '5rem' }} />
             <h2 className={`text-lg font-medium text-primary ${textStyle}`}>{text}</h2>
         </div>
     )
