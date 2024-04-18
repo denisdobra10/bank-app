@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import logo from '../assets/logo.svg'
 import { Link } from 'react-router-dom';
 import ArrowRightIcon from '../assets/arrow-right.svg';
+import { Toaster, toast } from 'sonner';
+
 
 function LoginPage() {
     const [formData, setFormData] = useState({ email: '', password: '' });
@@ -21,7 +23,7 @@ function LoginPage() {
             <Link to={'/'}><img src={logo} width={'400px'} alt="Logo" /></Link>
             <h2 className='text-paragraphLighter text-xl font-medium tracking-wider'>Log in pentru a intra in cont</h2>
 
-            <form onSubmit={handleSubmit} className='flex flex-col w-1/3 gap-4'>
+            <form onSubmit={handleSubmit} className='flex flex-col px-8 w-full sm:w-1/3 gap-4'>
                 <input
                     className='flex w-full bg-white rounded-full p-8 text-center '
                     type="email"
@@ -46,6 +48,8 @@ function LoginPage() {
             </form>
 
             <Link to={'/'} className='text-primary underline font-semibold tracking-wider'>Inapoi pe website</Link>
+
+            <Toaster richColors position='top-right' />
         </div>
     )
 }
