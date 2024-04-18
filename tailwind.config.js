@@ -13,6 +13,8 @@ export default {
         'background': '#FFFFFF',
         'button': '#0090FF',
         'paragraph': '#444444',
+        'paragraphLighter': '#666666',
+        'appbg': '#F3F4F3'
       }
     },
   },
