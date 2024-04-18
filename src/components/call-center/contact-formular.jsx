@@ -10,24 +10,24 @@ function ContactFormular() {
             <input
                 type="text"
                 placeholder="Nume complet"
-                className="bg-white w-full py-2 px-4 rounded-md border border-gray-300"
+                className="bg-white text-black w-full py-2 px-4 rounded-md border border-gray-300"
                 required
             />
             <input
                 type="text"
                 placeholder="Numar de telefon"
-                className="bg-white w-full py-2 px-4 rounded-md border border-gray-300"
+                className="bg-white text-black w-full py-2 px-4 rounded-md border border-gray-300"
                 required
             />
             <input
                 type="email"
                 placeholder="Email"
-                className="bg-white w-full py-2 px-4 rounded-md border border-gray-300"
+                className="bg-white text-black w-full py-2 px-4 rounded-md border border-gray-300"
                 required
             />
             <textarea
                 placeholder="Mesaj"
-                className="bg-white w-full py-2 px-4 rounded-md border border-gray-300"
+                className="bg-white text-black w-full py-2 px-4 rounded-md border border-gray-300"
                 rows={4}
                 required
             ></textarea>

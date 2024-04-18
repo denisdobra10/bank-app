@@ -12,7 +12,7 @@ function CallFormular() {
         <div className='flex flex-col gap-2 text-center'>
             <h2 className='text-3xl capitalize font-bold mb-8'>Call Center</h2>
 
-            <div className="flex w-full text-center items-center border-4 border-white px-16 py-4 text-xl rounded-xl font-bold">
+            <div className="flex w-full justify-center items-center border-4 border-white px-16 py-4 text-xl rounded-xl font-bold">
                 PESTE 20 DE MINUTE - TIMP DE ASTEPTARE
             </div>
 

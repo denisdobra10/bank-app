@@ -14,7 +14,6 @@ function HomePage() {
             <HomeWhatIsRightForYou />
             <ApplicationAdvertise />
             <PresentationCards />
-
         </div>
     )
 }
