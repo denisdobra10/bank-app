@@ -5,6 +5,7 @@ import CallCenterPage from "./pages/call-center-page"
 import ProgramarePage from "./pages/programare-page"
 import AppPage from "./pages/app-page"
 import LoginPage from "./pages/login-page"
+import SignupPage from "./pages/signup-page"
 
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
         </Route>
         <Route path="/app" element={<AppPage />} />
         <Route path="/login" element={<LoginPage />} />
-        <Route path="/signup" element={<AppPage />} />
+        <Route path="/signup" element={<SignupPage />} />
       </Routes>
     </BrowserRouter>
   )
