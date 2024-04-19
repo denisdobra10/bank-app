@@ -14,7 +14,14 @@ export default {
         'button': '#0090FF',
         'paragraph': '#444444',
         'paragraphLighter': '#666666',
-        'appbg': '#F3F4F3'
+        'appbg': '#F3F4F3',
+        'lightGreen': '#96DF60',
+        'darkGreen': '#4CBA7F',
+        'lightRed': '#FE575F',
+        'darkRed': '#E62D5B',
+        'lightYellow': '#FFCA03',
+        'darkYellow': '#FFB102',
+        'vanishedBlack': '#333333'
       }
     },
   },
