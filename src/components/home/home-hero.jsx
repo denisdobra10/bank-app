@@ -12,7 +12,7 @@ function HomeHero() {
                 </h1>
                 <h2 className='text-3xl text-paragraph font-normal tracking-wide'>O experienta bancara placuta si eficienta</h2>
 
-                <IconTailButton text='Afla mai multe' path='/' icon={ArrowDownwardIcon} color='primary' />
+                <IconTailButton text='Afla mai multe' path='#applicationAdvertise' icon={ArrowDownwardIcon} color='primary' />
             </div>
             <div className="flex justify-center items-center w-full">
                 <img src={HeroImage} alt="Hero image" className='transition-all hover:scale-105 ease-in-out duration-700' />

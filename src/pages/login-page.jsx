@@ -1,12 +1,18 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import logo from '../assets/logo.svg'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import ArrowRightIcon from '../assets/arrow-right.svg';
 import { Toaster, toast } from 'sonner';
+import { useData } from '../data-service';
+import useApi from '../utils/auth-service';
 
 
 function LoginPage() {
     const [formData, setFormData] = useState({ email: '', password: '' });
+    const { responseData, loading, error, fetchData, clearError, clearResponseData } = useApi('http://localhost:8080/api/login', 'POST', formData);
+    const { updateData, isLoggedIn, updateLoggedIn } = useData();
+    const navigate = useNavigate();
+
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -15,8 +21,31 @@ function LoginPage() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        return;
+        await fetchData();
     };
+
+    useEffect(() => {
+        if (responseData != null) {
+            if (responseData.user != null) {
+                toast.success('Te-ai logat in cont cu succes');
+                updateData(responseData);
+                updateLoggedIn(true);
+                clearResponseData();
+                navigate('/app');
+            }
+        }
+
+        if (error != null) {
+            toast.error('Email sau parola gresite');
+            clearError();
+        }
+
+        if (isLoggedIn) {
+            navigate('/app');
+        }
+
+    }, [responseData, error, isLoggedIn])
+
 
     return (
         <div className='flex flex-col w-full h-[100vh] bg-appbg justify-center items-center gap-8'>
@@ -25,7 +54,7 @@ function LoginPage() {
 
             <form onSubmit={handleSubmit} className='flex flex-col px-8 w-full sm:w-1/3 gap-4'>
                 <input
-                    className='flex w-full bg-white rounded-full p-8 text-center '
+                    className='flex w-full bg-white rounded-full p-8 text-center shadow-[0_25px_60px_-15px_rgba(0,0,0,0.3)] '
                     type="email"
                     name="email"
                     value={formData.email}
@@ -34,7 +63,7 @@ function LoginPage() {
                     required
                 />
                 <input
-                    className='flex w-full bg-white rounded-full p-8 text-center '
+                    className='flex w-full bg-white rounded-full p-8 text-center shadow-[0_25px_60px_-15px_rgba(0,0,0,0.3)]'
                     type="password"
                     name="password"
                     value={formData.password}

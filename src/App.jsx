@@ -18,7 +18,10 @@ function App() {
           <Route path="/call-center" element={<CallCenterPage />} />
           <Route path="/booking" element={<ProgramarePage />} />
         </Route>
-        <Route path="/app" element={<AppPage />} />
+        <Route
+          path="/app"
+          element={<AppPage />}
+        />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<SignupPage />} />
       </Routes>

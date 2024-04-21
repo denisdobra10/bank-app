@@ -13,7 +13,7 @@ function PresentationCards() {
                 title={'Obtine dobanda atragatoare pentru banii tai'}
                 description={'Foloseste contul de economii si incepe sa castigi bani regulat, chiar acum!'}
                 buttonText={'Sunt interesat'}
-                toPath={'/'}
+                toPath={'/signup'}
             />
             <PresentationLandscapeCard
                 imageFirst={false}
@@ -21,14 +21,14 @@ function PresentationCards() {
                 title={'Transferuri instante si securizate'}
                 description={'Apasa un click si transfera bani unui prieten! Incasezi la fel de rapid :)'}
                 buttonText={'Suna fascinant'}
-                toPath={'/'}
+                toPath={'/signup'}
             />
             <PresentationLandscapeCard
                 image={ExchangeImage}
                 title={'Schimburi valutare in aplicatie'}
                 description={'Nu, nu iti luam comision indiferent de valoarea schimbului. De asemenea, vrem sa te asiguram ca vei avea acces la acest serviciu non-stop!'}
                 buttonText={'M-ai convins'}
-                toPath={'/'}
+                toPath={'/signup'}
             />
         </>
     )

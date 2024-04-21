@@ -22,7 +22,7 @@ function HomeAdSection() {
 
                 <div className="flex flex-col bg-white rounded-lg p-8 gap-2">
                     <h2 className='text-3xl text-paragraph font-normal'>Salutare,</h2>
-                    <LinkButton text='Creeaza cont' to='/' className={'w-full'} />
+                    <LinkButton text='Creeaza cont' to='/signup' className={'w-full'} />
                     <h3 className='mt-4 text-sm italic text-paragraph'>si beneficiezi de serviciile noastre complete</h3>
                 </div>
 

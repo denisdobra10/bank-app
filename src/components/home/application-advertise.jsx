@@ -3,7 +3,7 @@ import AppImage from '../../assets/app.gif'
 
 function ApplicationAdvertise() {
     return (
-        <div className="flex flex-row w-full justify-center items-center gap-8 px-8 sm:px-32 py-16">
+        <div id='applicationAdvertise' className="flex flex-row w-full justify-center items-center gap-8 px-8 sm:px-32 py-16">
             <div className="flex w-full justify-center items-center">
                 <img src={AppImage} alt="App presentation image" className='transition-all hover:scale-105 ease-in-out duration-700' />
             </div>
