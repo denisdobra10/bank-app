@@ -1,8 +1,15 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Description:
+This project is a web application for a bank, featuring a user-friendly website presenting the bank's services, a login/signup system, and a user dashboard for account management.
 
-Currently, two official plugins are available:
+# Technologies Used:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+React: Frontend framework for building user interfaces.
+Vite: Fast, modern build tooling for frontend development.
+Tailwind CSS: Utility-first CSS framework for styling components.
+
+# Features:
+Homepage: Presents the bank's services and features.
+Login/Signup System: Allows users to sign in or create a new account securely.
+User Dashboard: Provides users with access to their accounts, transaction history, and account management functionalities.
